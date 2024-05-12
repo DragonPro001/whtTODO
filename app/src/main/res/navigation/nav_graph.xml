@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/add_task_Fragment"
+        android:name="com.example.whttodo.fragment.Add_task_Fragment"
+        android:label="Add_task_Fragment" >
+        <action
+            android:id="@+id/action_add_task_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_taskFragment"
+        android:name="com.example.whttodo.fragment.Edit_taskFragment"
+        android:label="Edit_taskFragment" >
+        <action
+            android:id="@+id/action_edit_taskFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.whttodo.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_add_task_Fragment"
+            app:destination="@id/add_task_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_edit_taskFragment"
+            app:destination="@id/edit_taskFragment" />
+    </fragment>
+</navigation>
