@@ -30,5 +30,11 @@
         <action
             android:id="@+id/action_homeFragment_to_edit_taskFragment"
             app:destination="@id/edit_taskFragment" />
+
+        <argument
+            android:name="task"
+            app:argType="com.example.whttodo.model.Task"
+            app:nullable="true"/>
+
     </fragment>
 </navigation>
