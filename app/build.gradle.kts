@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application") version "7.4.2"
+    id("com.android.application") version "8.3.0"
     id("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
     id ("kotlin-parcelize")
