@@ -12,6 +12,8 @@ import com.example.whttodo.viewmodel.taskViewModel
 import com.example.whttodo.viewmodel.viewModelFactory
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var taskViewModel: taskViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
